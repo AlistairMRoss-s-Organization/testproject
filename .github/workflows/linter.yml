@@ -1,5 +1,13 @@
 name: Linter
-on: [push, pull_request]
+on: 
+  push:
+    branches: 
+      - main
+      - 'dev'
+  pull:
+    branches:
+      - main
+      - 'dev'
 jobs:
   super-lint:
     name: Lint Code Base
