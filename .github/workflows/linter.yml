@@ -10,7 +10,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: fix
-        uses: github/super-linter@v4
         run: eslint --fux
       - name: Run Linter
         uses: github/super-linter@v4
