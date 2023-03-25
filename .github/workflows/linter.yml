@@ -18,8 +18,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: fix code
-        - run: npm instll
-        - run: npm run lint -- --fix
+        run: npm instll
+        run: npm run lint -- --fix
       - name: Run Linter
         #uses: github/super-linter@v3.17.0
         uses: github/super-linter@v4
