@@ -15,8 +15,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
+        with: github/
           fetch-depth: 0
+
+      - name: fix code
+        run: npm instll
+        run: npm run lint -- --fix
       - name: Run Linter
         #uses: github/super-linter@v3.17.0
         uses: github/super-linter@v4
